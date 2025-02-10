@@ -54,10 +54,10 @@ if not bot_token or not chat_id:
 telegram_url_message = f'https://api.telegram.org/bot{bot_token}/sendMessage' # URL for sending text messages
 telegram_url_photo = f'https://api.telegram.org/bot{bot_token}/sendPhoto'    # URL for sending photos
 
-last_notification_file = "/home/goku/motion/motion_last_notification.txt"
-last_photo_sent_file = "/home/goku/motion/motion_last_photo_sent.txt" # File to store path of last sent photo
+last_notification_file = "/home/goku/Motion-detection/motion_last_notification.txt"
+last_photo_sent_file = "/home/goku/Motion-detection/motion_last_photo_sent.txt" # File to store path of last sent photo
 notification_cooldown = 10
-pics_path = "/home/goku/motion/pics" # **IMPORTANT:** Adjust this to your actual photos path if different!
+pics_path = "/home/goku/Motion-detection/pics" # **IMPORTANT:** Adjust this to your actual photos path if different!
 
 def send_motion_message_with_photo():
     message = "Motion detected! Last photo captured:"

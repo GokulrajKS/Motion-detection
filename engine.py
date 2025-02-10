@@ -17,7 +17,7 @@ bot_token = os.environ['BOT_TOKEN']
 application = Application.builder().token(bot_token).build()
 
 # Set up the pics directory for storing images and videos
-pics_path = '/home/goku/motion/pics'
+pics_path = '/home/goku/Motion-detection/pics'
 
 # Initialize logging
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
@@ -76,7 +76,7 @@ async def start_motion(update, context):
     try:
         # Start motion in the background
         process = subprocess.Popen(
-            ["motion", "-c", "/home/goku/motion/motion.conf"],
+            ["motion", "-c", "/home/goku/Motion-detection/motion.conf"],
             shell=False,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
